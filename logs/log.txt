@@ -1,0 +1,1 @@
+Arquivo usado apenas para criar a pasta de logs
