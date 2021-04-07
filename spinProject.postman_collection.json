@@ -1,0 +1,972 @@
+{
+	"info": {
+		"_postman_id": "4a83f7a2-2184-43b5-9220-eec9c37f3d38",
+		"name": "spinProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "Clientes",
+					"item": [
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "arthur",
+											"description": "Nome completo",
+											"type": "text"
+										},
+										{
+											"key": "cpf",
+											"value": "38197642915",
+											"description": "CPF (Sem pontuação, apenas números)",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "email@email.com",
+											"description": "Email",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/clientes/adicionar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"clientes",
+										"adicionar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Alterar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "12",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "nome",
+											"value": "Rose",
+											"description": "Nome completo",
+											"type": "text"
+										},
+										{
+											"key": "cpf",
+											"value": "55897380910",
+											"description": "CPF (Sem pontuação, apenas números)",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"description": "Email",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/clientes/alterar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"clientes",
+										"alterar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id[0]",
+											"value": "6",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[1]",
+											"value": "7",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[2]",
+											"value": "8",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[3]",
+											"value": "9",
+											"type": "text"
+										},
+										{
+											"key": "id[4]",
+											"value": "10",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/clientes/remover/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"clientes",
+										"remover",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/api/clientes/listar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"clientes",
+										"listar",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuários",
+					"item": [
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "arthur",
+											"description": "Nome completo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "arthur1@arthur.com",
+											"description": "Email",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "12345678",
+											"description": "Senha (Em clear text)",
+											"type": "text"
+										},
+										{
+											"key": "ativo",
+											"value": "",
+											"description": "1 - Sim / 0 - Não",
+											"type": "text"
+										},
+										{
+											"key": "admin",
+											"value": "",
+											"description": "1 - Sim / 0 - Não",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/usuarios/adicionar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"usuarios",
+										"adicionar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Alterar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "ID do usuário no banco",
+											"type": "text"
+										},
+										{
+											"key": "nome",
+											"value": "Arthur",
+											"description": "Nome completo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "arthur@arthur.com",
+											"description": "Email",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "13245678",
+											"description": "Senha (Em clear text)",
+											"type": "text"
+										},
+										{
+											"key": "ativo",
+											"value": "1",
+											"description": "1 - Usuário ativo / 0 - Usuário desativado",
+											"type": "text"
+										},
+										{
+											"key": "admin",
+											"value": "",
+											"description": "1 - Sim / 0 - Não",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/usuarios/alterar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"usuarios",
+										"alterar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id[0]",
+											"value": "2",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[1]",
+											"value": "4",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[2]",
+											"value": "5",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/usuarios/remover/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"usuarios",
+										"remover",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/api/usuarios/listar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"usuarios",
+										"listar",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Produtos",
+					"item": [
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "arthur",
+											"description": "Nome do produto",
+											"type": "text"
+										},
+										{
+											"key": "codigoBarras",
+											"value": "6666666666",
+											"description": "Código de barras (precisa ter exatramente 10 dígitos)",
+											"type": "text"
+										},
+										{
+											"key": "valorUnitario",
+											"value": "10.5",
+											"description": "Valor Unitário no formato double",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/produtos/adicionar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"produtos",
+										"adicionar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Alterar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "4",
+											"description": "ID do produto no banco",
+											"type": "text"
+										},
+										{
+											"key": "nome",
+											"value": "Arthur",
+											"description": "Nome do produto",
+											"type": "text"
+										},
+										{
+											"key": "codigoBarras",
+											"value": "1112223334",
+											"description": "Código de barras (precisa ter exatramente 10 dígitos)",
+											"type": "text"
+										},
+										{
+											"key": "valorUnitario",
+											"value": "11.5",
+											"description": "Valor Unitário em formato double",
+											"type": "text"
+										},
+										{
+											"key": "ativo",
+											"value": "1",
+											"description": "1 - Usuário ativo / 0 - Usuário desativado",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/produtos/alterar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"produtos",
+										"alterar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id[0]",
+											"value": "1",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[1]",
+											"value": "2",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[2]",
+											"value": "3",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/produtos/remover/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"produtos",
+										"remover",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/api/produtos/listar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"produtos",
+										"listar",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pedidos",
+					"item": [
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idCliente",
+											"value": "11.2",
+											"description": "ID do cliente na base",
+											"type": "text"
+										},
+										{
+											"key": "idUsuario",
+											"value": "1",
+											"description": "ID do usuário na base",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/pedidos/adicionar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"pedidos",
+										"adicionar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Alterar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "ID do pedido na base (Código do pedido)",
+											"type": "text"
+										},
+										{
+											"key": "idCliente",
+											"value": "7",
+											"description": "ID do cliente na base",
+											"type": "text"
+										},
+										{
+											"key": "idUsuario",
+											"value": "1",
+											"description": "ID do usuário na base",
+											"type": "text"
+										},
+										{
+											"key": "situacao",
+											"value": "1",
+											"description": "Tipo de situação (0 - Em aberto / 1 - Pago / 2 - Cancelada)",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/pedidos/alterar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"pedidos",
+										"alterar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/api/pedidos/listar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"pedidos",
+										"listar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id[0]",
+											"value": "3",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[1]",
+											"value": "2",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/pedidos/remover/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"pedidos",
+										"remover",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ItensPedido",
+					"item": [
+						{
+							"name": "Adicionar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idPedido",
+											"value": "4",
+											"description": "ID do pedido na base",
+											"type": "text"
+										},
+										{
+											"key": "idProduto",
+											"value": "4",
+											"description": "ID do prtoduto na base",
+											"type": "text"
+										},
+										{
+											"key": "quantidade",
+											"value": "10",
+											"description": "Quantidade de produtos (int)",
+											"type": "text"
+										},
+										{
+											"key": "desconto",
+											"value": "10.00",
+											"description": "(Opicional) Valor é um double",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/itensPedido/adicionar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"itensPedido",
+										"adicionar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "idPedido",
+										"value": "1",
+										"description": "(Opicional) Usado para filtrar apenas os itens de um pedido",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/api/itensPedido/listar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"itensPedido",
+										"listar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Alterar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "2",
+											"description": "ID do item na base",
+											"type": "text"
+										},
+										{
+											"key": "idPedido",
+											"value": "3",
+											"description": "ID do pedido na base",
+											"type": "text"
+										},
+										{
+											"key": "idProduto",
+											"value": "4",
+											"description": "ID do prtoduto na base",
+											"type": "text"
+										},
+										{
+											"key": "quantidade",
+											"value": "10",
+											"description": "Quantidade de produtos (int)",
+											"type": "text"
+										},
+										{
+											"key": "desconto",
+											"value": "100",
+											"description": "(Opicional) Valor é um double",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/itensPedido/alterar/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"itensPedido",
+										"alterar",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "6",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text"
+										},
+										{
+											"key": "id[1]",
+											"value": "2",
+											"contentType": "",
+											"description": "ID do cliente no banco",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/api/itensPedido/remover/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"itensPedido",
+										"remover",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
